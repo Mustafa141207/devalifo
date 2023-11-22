@@ -1,0 +1,330 @@
+#home {
+    background-image: url(../images/hero-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#home::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0,0.5);
+    content: "";
+}
+
+* {
+    text-transform: capitalize;
+}
+
+:root {
+    --secndary-color: #0078ff;
+    --section-color: #e0e0e0;
+}
+
+/* .navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show */
+nav .navbar-nav li.nav-item {
+    position: relative;
+    transition: all 0.9s;
+}
+
+nav .navbar-nav li.nav-item::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 4px;
+    bottom: -2px;
+    transition: 0.6s;
+}
+
+.icon{
+    width: 3rem;
+      height: 3rem;
+}
+
+nav .navbar-nav li.nav-item:hover::after {
+    animation-name: help;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+}
+
+@keyframes help {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+
+}
+
+#home .content h2::after{
+    content: "frelancer";
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: -15px;
+    left: 58%;
+    animation-name: movement;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    transform: translate(-50%,-50%);
+}
+@keyframes movement {
+    0%{
+        content: "frelancer";
+    }
+    3%{
+        content: "d";
+    }
+    6%{
+        content: "de";
+    }
+    9%{
+        content: "dev";
+    }
+    12%{
+        content: "devo";
+    }
+    15%{
+        content: "devol";
+    }
+    18%{
+        content: "devolp";
+    }
+21%{
+        content: "devolpe";
+    }
+    24%{
+        content: "devolper";
+    }
+    27%{
+        content: "de";
+    }
+    30%{
+        content: "des";
+    }
+    33%{
+        content: "desi";
+    }
+    36%{
+        content: "desin";
+    }
+    39%{
+        content: "desine";
+    }
+    42%{
+        content: "desiner";
+
+    }
+    45%{
+        content: "|";
+    }
+    48%{
+        content: "p";
+    }
+    51%{
+        content: "ph";
+    }
+    54%{
+        content: "pho";
+    }
+    57%{
+        content: "phot";
+    }
+    60%{
+        content: "photo";
+    }
+    63%{
+        content: "photog";
+    }
+    66%{
+        content: "photogr";
+    }
+    69%{
+        content: "photogrp";
+
+    }
+    72%{
+        content: "photogrper";
+    }
+    75%{
+        content: "f";
+    }
+    78%{
+        content: "fr";
+    }
+    81%{
+        content: "fre";
+    }
+    84%{
+    content: "free";
+    }
+    87%{
+        content: "free p";
+    }
+    90%{
+    content: "free pa";
+    }
+    93%{
+        content: "free pal";
+    }
+    96%{
+    content: "free pale";
+    }
+    97%{
+        content: "free pales";
+    }
+    98%{
+        content: "free palest";
+    }
+    99%{
+        content: "free palestin";
+       
+    }
+    100%{
+        content: "free palestine";
+       
+    }
+    
+}
+
+
+#about,
+#port {
+    background-color: var(--section-color);
+}
+
+#about .container .content h2::after {
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 5px;
+    background-color: var(--secndary-color);
+    bottom: 0;
+    left: 0;
+}
+.main-title{
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+.main-title h2{
+    font-weight: bolder;
+}
+.main-title::after {
+    content: "";
+    background-color: var(--secndary-color);
+    width: 40px;
+    height: 5px;
+    bottom: 0;
+    position: absolute;
+   transform: translateX(-50%);
+}
+#port .container .skin .img img{
+    transition: 0.6s;
+}
+#port .container .skin .img img:hover{
+    scale: 1.2 ;
+}
+#contact {
+    background-image: url(../images/overlay-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    height: 100vh;
+}
+#contact::after{
+    background-color: rgb(0, 120, 255, 0.5);
+    width: 100%;
+    content: "";
+    position: absolute;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+}
+
+#contact .container .title::after{
+    position: absolute;
+    content: "";
+    background-color:var(--secndary-color);
+    width: 100px;
+    bottom: 0;
+    left: 3%;
+    height: 3px;
+    position: absolute;
+}
+#contact .container .icons .icon{
+    transition: 0.6s;
+    border-color: var(--secndary-color) !important;
+}
+#contact  .container .icons .icon:hover{
+    background-color: var(--secndary-color);
+    color: white;
+    border: none !important;
+    cursor: pointer;
+}
+footer{
+background-color: var(--secndary-color);
+}
+#service{
+    background-color: var(--section-color);
+}
+#service .container .service-box .s-icon {
+    width: 8rem;
+    height: 8rem;
+
+}
+#service .container .service-box{
+  
+    background-color: white
+}
+#service .container .service-box .s-icon{
+    border:  10px solid var(--secndary-color);
+    border-radius: 50%;
+    transition: 0.6s;
+}
+
+#service .container .service-box:hover .s-icon{
+    background-color: var(--secndary-color);
+    color: white;
+border-color: rgba(239, 225, 225, 0.855);
+}
+#rewards{
+    background-image: url(../images/counters-bg.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+#rewards::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(0, 120, 255, 0.5);
+    top: 0;
+
+}
+#rewards .container .reward-icon{
+    width: 4rem;
+    height: 4rem;
+    border: 10px solid rgba(239, 225, 225, 0.855) ;
+}
+#fed{
+        background-image: url(../images/counters-bg.jpg);
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+}
+#fed::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(0, 120, 255, 0.5);
+    top: 0;
+
+}
